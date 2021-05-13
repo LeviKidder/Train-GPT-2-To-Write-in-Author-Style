@@ -15,6 +15,8 @@ It probably won't work on your machine. It barely works on mine. You can use wha
 
 Create a large single text file with all the training data you want to use in it. You can delete or add whatever you like, but it will change the training data and model. ***Once you have all the training data you want in one large file - name it merged_books.txt and store it in the same directory as the rest of the code*** You can replace the one that came with. Or just use it if you like. My understanding is that some data scientists look here https://the-eye.eu/ for good sources of data.
 
+***You will also want to either clear or replace the output_cleaned.txt, val.txt and train.txt files, as they currently have data on them if you want to use your own training data***
+
 ***I am also happy to add your tokenized data sets to this repo so others can use them***
 
 
