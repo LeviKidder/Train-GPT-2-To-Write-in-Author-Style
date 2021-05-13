@@ -13,6 +13,14 @@ I cobbled together a bunch of parts of other people's work to hopefully get GPT-
 
 It probably won't work on your machine. It barely works on mine. You can use whatever you like, but I had success using anaconda and creating an venv to run in. It allowed me to control my python version which is important as I only found it to work with the TensorFlow version 1.12 which is only on 3.6 python. Anyway on we go.
 
+
+
+****HOW TO START****
+You can optionally open a conda cmd prompt and cd to an empty directory you plan to use for this and if you don't already have git do
+> conda install -c anaconda git 
+> 
+
+
 Create a large single text file with all the training data you want to use in it. You can delete or add whatever you like, but it will change the training data and model. ***Once you have all the training data you want in one large file - name it merged_books.txt and store it in the same directory as the rest of the code*** You can replace the one that came with. Or just use it if you like. My understanding is that some data scientists look here https://the-eye.eu/ for good sources of data.
 
 ***You will also want to either clear or replace the output_cleaned.txt, val.txt and train.txt files, as they currently have data on them if you want to use your own training data***
