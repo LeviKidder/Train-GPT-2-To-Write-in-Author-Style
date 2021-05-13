@@ -1,6 +1,11 @@
 # Train-GPT-2-To-Write-in-Author-Style
 
-NOTE: THIS IS ON WINDOWS 10 RUNNING   conda version : 4.9.2, conda-build version : 3.20.5
+NOTE: THIS IS ON WINDOWS 10 RUNNING   conda version : 4.9.2, conda-build version : 3.20.5 -This is working as of 13 May 2021
+
+You can download anaconda here: https://www.anaconda.com/products/individual
+
+***I couldn't find a complete working guide to doing this for people who are bad at python like myself, so I made one. OpenAI please Hire me"
+
 
 If you run into issues I can't help you. Run this code at your own risk. If you accidentally create skynet that's on you bud. 
 
@@ -59,4 +64,4 @@ There are a ton of little things that you can mess with including temperature an
 
 
 
-
+This was done using the code created by Priya Dwivedi adapted from this repo.  https://github.com/priya-dwivedi/Deep-Learning/tree/master/GPT2-HarryPotter-Training
