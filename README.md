@@ -4,7 +4,7 @@ NOTE: THIS IS ON WINDOWS 10 RUNNING   conda version : 4.9.2, conda-build version
 
 You can download anaconda here: https://www.anaconda.com/products/individual
 
-***I couldn't find a complete working guide to doing this for people who are bad at python like myself, so I made one. OpenAI please Hire me"
+***I couldn't find a complete working guide to doing this for people who are bad at python like myself, so I made one.***
 
 
 If you run into issues I can't help you. Run this code at your own risk. If you accidentally create skynet that's on you bud. 
@@ -17,8 +17,14 @@ It probably won't work on your machine. It barely works on mine. You can use wha
 
 ****HOW TO START****
 You can optionally open a conda cmd prompt and cd to an empty directory you plan to use for this and if you don't already have git do
+
 > conda install -c anaconda git 
-> 
+select y if prompted
+> git clone https://github.com/LeviKidder/Train-GPT-2-To-Write-in-Author-Style
+> cd Train-GPT-2-To-Write-in-Author-Style
+ 
+You're in hackerman. But now you may need to change some files.  
+
 
 
 Create a large single text file with all the training data you want to use in it. You can delete or add whatever you like, but it will change the training data and model. ***Once you have all the training data you want in one large file - name it merged_books.txt and store it in the same directory as the rest of the code*** You can replace the one that came with. Or just use it if you like. My understanding is that some data scientists look here https://the-eye.eu/ for good sources of data.
