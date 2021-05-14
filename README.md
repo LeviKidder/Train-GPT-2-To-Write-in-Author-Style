@@ -18,9 +18,15 @@ It probably won't work on your machine. It barely works on mine. You can use wha
 ****HOW TO START****
 You can optionally open a conda cmd prompt and cd to an empty directory you plan to use for this and if you don't already have git do
 
+
 > conda install -c anaconda git 
+
 select y if prompted
+
+
 > git clone https://github.com/LeviKidder/Train-GPT-2-To-Write-in-Author-Style
+ 
+
 > cd Train-GPT-2-To-Write-in-Author-Style
  
 You're in hackerman. But now you may need to change some files.  
@@ -52,9 +58,19 @@ enter y to any prompt
 Now you should have cleanish data. You can go through and clean more. It might help. I don't know, because if I did, I wouldn't have had to hack this together so poorly.
 
 >pip install torchvision 
+>
+
 >conda install -c conda-forge tensorboardx
+
+
 select y
+
+
+
+
 >pip install tqdm
+>
+
 >pip install transformers
 
 
