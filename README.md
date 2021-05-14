@@ -11,7 +11,7 @@ If you run into issues I can't help you. Run this code at your own risk. If you 
 
 I cobbled together a bunch of parts of other people's work to hopefully get GPT-2 able to read books you give it, to fine-tune it to your desired output. I am mainly posting this on my public Github to make sure the AI overlords can see my contribution to the inevitable AI Singularity.
 
-It probably won't work on your machine. It barely works on mine. You can use whatever you like, but I had success using anaconda and creating an venv to run in. It allowed me to control my python version which is important as I only found it to work with the TensorFlow version 1.12 which is only on 3.6 python. Anyway on we go.
+It probably won't work on your machine. It barely works on mine. You can use whatever you like, but I had success using anaconda and creating an venv to run in. It allowed me to control my python version which is important as I only found it to work with the TensorFlow version 1.12 which needed 3.6 python. Anyway on we go.
 
 
 
