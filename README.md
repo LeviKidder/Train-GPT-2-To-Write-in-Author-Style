@@ -4,15 +4,7 @@ NOTE: THIS IS ON WINDOWS 10 RUNNING   conda version : 4.9.2, conda-build version
 
 You can download anaconda here: https://www.anaconda.com/products/individual
 
-***I couldn't find a complete working guide to doing this for people who are bad at python like myself, so I made one.***
-
-
-If you run into issues I can't help you. Run this code at your own risk. If you accidentally create skynet that's on you bud. 
-
-I cobbled together a bunch of parts of other people's work to hopefully get GPT-2 able to read books you give it, to fine-tune it to your desired output. I am mainly posting this on my public Github to make sure the AI overlords can see my contribution to the inevitable AI Singularity.
-
-It probably won't work on your machine. It barely works on mine. You can use whatever you like, but I had success using anaconda and creating an venv to run in. It allowed me to control my python version which is important as I only found it to work with the TensorFlow version 1.12 which needed 3.6 python. Anyway on we go.
-
+***I couldn't find a complete working guide to doing this for with current library versions, so I made one.***
 
 
 ****HOW TO START****
@@ -29,7 +21,7 @@ select y if prompted
 
 > cd Train-GPT-2-To-Write-in-Author-Style
  
-You're in hackerman. But now you may need to change some files.  
+Now you may need to change some files.  
 
 
 
@@ -41,7 +33,7 @@ Create a large single text file with all the training data you want to use in it
 
 
 
-To start Open a conda prompt and ***cd to the file containing all the code pieces and data***
+To start open conda and ***cd to the file containing all the code pieces and data***
 
 then enter 
 
@@ -55,7 +47,7 @@ enter y to any prompt
 
 >python Cleandata.py
 
-Now you should have cleanish data. You can go through and clean more. It might help. I don't know, because if I did, I wouldn't have had to hack this together so poorly.
+Now you should have cleanish data. You can go through and clean more if so desired, but I have found it didn't make too much of a difference in my limited testing.
 
 >pip install torchvision 
 >
@@ -79,7 +71,7 @@ select y
 
 >python run_lm_finetuning.py --output_dir=output --model_type=gpt2 --model_name_or_path=gpt2-medium --do_train --train_data_file=THIS SHOULD BE WHATEVER THE PATH TO YOUR TRAIN.TXT FILE IS\train.txt --do_eval --eval_data_file=THIS SHOULD BE THE PATH TO YOUR VAL.TXT FILE\val.txt --overwrite_output_dir --block_size=200 --per_gpu_train_batch_size=6 --save_steps 5000 --num_train_epochs=2
 
-You can fiddle around the epochs and steps and stuff. This took about 12 hours to run on my 9700k and didn't use my GPU at all. I don't have Cudnn or whatever the Nvidia thing is. You could probably get this to work on GPU much more efficiently on linux using docker and native NVIDIA support. But I didn't YMMV.
+You can fiddle around the epochs and steps and stuff. This took about 12 hours to run on my 9700k and didn't use my GPU at all. I don't have Cudnn on this machine. You could probably get this to work on GPU much more efficiently on linux using docker and native NVIDIA support, but I didn't YMMV.
 
 When that's done then the hardest part is over.
 
