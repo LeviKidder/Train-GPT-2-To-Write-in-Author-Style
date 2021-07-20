@@ -8,8 +8,9 @@ You can download anaconda here: https://www.anaconda.com/products/individual
 
 
 ****HOW TO START****
-You can optionally open a conda cmd prompt and cd to an empty directory you plan to use for this and if you don't already have git do
+You can optionally open a conda cmd prompt and cd to an empty directory you plan to use for this. 
 
+If you don't already have git run:
 
 > conda install -c anaconda git 
 
@@ -83,7 +84,7 @@ When that's done then the hardest part is over.
 
 There you go. Now you can watch your desktop think. 
 
-There are a ton of little things that you can mess with including temperature and stuff, but I'm not going to get into them here, because I don't know enough about it. This is just how to get old GPT-2 Running on my personal rig, and it might work and it might not. have fun and good luck!
+There are a ton of little things that you can mess with including temperature and stuff, but I'm not going to get into them here, because I don't know enough about it. This is just how to get old GPT-2 Running on my personal rig, and it might work and it might not. Feel free to post in issues if you have any, I will help if I can. Have fun and good luck!
 
 
 
